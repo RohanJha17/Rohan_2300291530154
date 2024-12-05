@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute Postion</title>
+
+    <style>
+        .box1{ /*to create a class named box1*/
+                height: 200px; 
+                width: 200px;
+                background-color: blue;
+            }
+
+        .box2{
+                    height: 200px;
+                    width: 200px;
+                    background-color: red;
+                    position: relative;
+                    top: 100px; /*We add top property to shift the red box down by 100px.*/
+            }
+
+
+            .box3{
+                    height: 200px;
+                    width: 200px;
+                    background-color: black;
+                    position: absolute; /* 1.Now we just set the position to absolute without any positioning property.*/
+                    top: 50px;/* 2.Shift down 50px*/
+                    left: 50px; /* Shift it to the right 50px*/
+               
+                }
+    </style>
+
+</head>
+<body>
+    <div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div> <!-- Third div element in the second div, making the second element its parent-->
+</div>
+</body>
+</html>
